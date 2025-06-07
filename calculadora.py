@@ -1,10 +1,5 @@
-# Presupuesto para sueldo
 
-# Guarda los valores de cada ingreso
-
-peya = 0
-bk = 1000000
-sueldo = bk + peya
+sueldo = int(input("Ingrese un importe: " ))
 
 # La funcion para calcular y mostrar el presupuesto
 
@@ -16,6 +11,8 @@ def calcular_presupuesto(sueldo):
     ahorro = round(sueldo * 0.10)
     inversion = round(sueldo * 0.10)
     division_cuentas = educacion + ahorro + inversion + gastos_libres
+
+    print(f"Presupuesto estimado para el mes: \n")
 
     print(f"Gastos fijos - ${gastos_fijos:,}\nEducación - ${educacion:,}\nDiversion - ${gastos_libres:,}\nAhorros - ${ahorro:,}\nInversión - ${inversion:,}")
     #print(f"Gastos fijos = ${gastos_fijos:,}")
